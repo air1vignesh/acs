@@ -32,7 +32,7 @@ export default function About() {
     {
       name: t('about.team.founder.name'),
       role: t('about.team.founder.role'),
-      image: 'public/data/1758005955871.jpg',
+      image: '/data/1758005955871.jpg',
       note: t('about.team.founder.note')
     }
   ];

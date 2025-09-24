@@ -14,7 +14,7 @@ export default function Hero() {
             {/* Logo Image */}
             <div>
               <img
-                src="public/data/Ajantha logo black.png" 
+                src="/data/Ajantha logo black.png" 
                 alt="Ajantha Consultancy Logo"
                 className="w-auto max-h-36 object-contain mx-auto"
               />
@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-2xl p-8">
               <img
-                src="public/data/close-up-smiley-family-therapist.jpg"
+                src="/data/close-up-smiley-family-therapist.jpg"
                 alt="Financial Planning"
                 className="w-full h-80 object-cover rounded-lg"
               />

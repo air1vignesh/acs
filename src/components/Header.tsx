@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <a href="#" onClick={openLogoModal} className="flex items-center">
-              <img src="/public/data/1758011042953.png" alt="Ajantha Consultancy Services Logo" className="w-12 h-12 cursor-pointer" />
+              <img src="/data/1758011042953.png" alt="Ajantha Consultancy Services Logo" className="w-12 h-12 cursor-pointer" />
             </a>
             <span className="text-xl font-bold text-gray-900">
               {language === 'te'
