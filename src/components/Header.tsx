@@ -132,7 +132,7 @@ const Header: React.FC = () => {
               <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-600 transition-colors">
+              <a href="https://x.com/AjanthaConsulta?t=CVX-Adl3jnmHuiOf2VeCgQ&s=09" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-600 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="https://www.instagram.com/ajanthaconsultancyservices/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-blue-600 transition-colors">

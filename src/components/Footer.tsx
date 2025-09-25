@@ -20,31 +20,24 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Facebook, href: '#', color: 'hover:text-blue-600' },
-    { icon: Twitter, href: '#', color: 'hover:text-blue-400' },
-    { icon: Linkedin, href: '#', color: 'hover:text-blue-700' },
+    { icon: Twitter, href: 'https://x.com/AjanthaConsulta?t=CVX-Adl3jnmHuiOf2VeCgQ&s=09', color: 'hover:text-blue-400' },
     { icon: Instagram, href: 'https://www.instagram.com/ajanthaconsultancyservices/', color: 'hover:text-pink-600' }
   ];
+
   // Smooth scroll function
   const handleNavClick = (e, href) => {
     e.preventDefault();
-    
-    // Remove the # from href to get the element id
     const targetId = href.replace('#', '');
     const targetElement = document.getElementById(targetId);
-    
+
     if (targetElement) {
-      // Smooth scroll to the target element
       targetElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
     } else {
-      // If element not found, try scrolling to top for home
       if (href === '#' || href === '#home') {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     }
   };
@@ -57,9 +50,12 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="bg-blue-700 text-white p-2 rounded-lg">
-                <span className="text-xl font-bold">ACS</span>
-              </div>
+              {/* ✅ Logo Image */}
+              <img
+                src="/data/Ajantha logo.png"   // <-- replace with your logo path
+                alt="ACS Logo"
+                className="h-12 w-auto rounded-lg shadow-md"
+              />
               <div className="ml-3">
                 <h3 className="text-lg font-bold">{t('footer.company')}</h3>
               </div>
