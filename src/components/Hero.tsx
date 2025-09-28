@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Shield, TrendingUp, Users, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Hero() {
@@ -14,7 +15,7 @@ export default function Hero() {
             {/* Logo Image */}
             <div>
               <img
-                src="/data/Ajantha logo black.png" 
+                src="/data/Ajantha logo black.png"
                 alt="Ajantha Consultancy Logo"
                 className="w-auto max-h-36 object-contain mx-auto"
               />
@@ -29,21 +30,16 @@ export default function Hero() {
                 {t('hero.subtitle')}
               </p>
             </div>
-
-          
           </div>
 
           {/* Hero Image */}
           <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-8">
+            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden aspect-[4/3] sm:aspect-[16/9]">
               <img
                 src="/data/close-up-smiley-family-therapist.jpg"
                 alt="Financial Planning"
-                className="w-full h-80 object-cover rounded-lg"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute -bottom-4 -right-4 bg-green-600 text-white p-4 rounded-lg shadow-lg">
-                <CheckCircle className="w-8 h-8" />
-              </div>
             </div>
           </div>
         </div>

@@ -47,23 +47,23 @@ export default function ServiceDetailPage() {
       },
       benefits: {
         en: [
-          "Cashless treatment at 10,000+ network hospitals",
+          "Cashless treatment at 13,000+ network hospitals",
           "Coverage for pre and post hospitalization expenses",
-          "Critical illness coverage up to ₹50 lakhs",
+          "Health Insurance coverage from ₹5 lakhs to ₹2 Crores",
           "Annual health check-ups included",
           "No waiting period for accidents",
           "Coverage for day-care procedures",
-          "Maternity benefits available",
+          "Restoration benefits available",
           "Tax benefits under Section 80D"
         ],
         te: [
-          "10,000+ నెట్‌వర్క్ ఆసుపత్రులలో నగదు రహిత చికిత్స",
+          "13,000+ నెట్‌వర్క్ ఆసుపత్రులలో నగదు రహిత చికిత్స",
           "ఆసుపత్రిలో చేరడానికి ముందు మరియు తరువాత ఖర్చుల కవరేజీ",
-          "₹50 లక్షల వరకు క్రిటికల్ ఇల్నెస్ కవరేజీ",
+          "₹5 లక్షల నుండి ₹2 కోట్ల వరకు ఆరోగ్య బీమా కవరేజ్",
           "వార్షిక ఆరోగ్య పరీక్షలు చేర్చబడ్డాయి",
           "ప్రమాదాలకు వేచి ఉండే కాలం లేదు",
           "డే-కేర్ ప్రక్రియలకు కవరేజీ",
-          "మాతృత్వ ప్రయోజనాలు అందుబాటులో ఉన్నాయి",
+          "రెస్టోరేషన్ ప్రయోజనాలు అందుబాటులో ఉన్నాయి",
           "సెక్షన్ 80D కింద పన్ను ప్రయోజనాలు"
         ]
       },
@@ -385,7 +385,7 @@ export default function ServiceDetailPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            {language === 'te' ? 'ముख్య ప్రయోజనాలు' : 'Key Benefits'}
+            {language === 'te' ? 'ముఖ్య ప్రయోజనాలు' : 'Key Benefits'}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {currentServiceDetails.benefits[language].map((benefit, index) => (

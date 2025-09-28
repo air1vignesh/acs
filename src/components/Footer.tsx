@@ -1,21 +1,42 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Footer() {
   const { t } = useLanguage();
+  const location = useLocation();
 
+  // Helper function to get features (matching your Services component)
+  const getFeatures = (baseKey, count) => {
+    return Array.from({ length: count }, (_, i) => t(`${baseKey}.${i + 1}`));
+  };
+
+  // Services data matching your Services component
   const services = [
-    t('services.health.title'),
-    t('services.life.title'),
-    t('services.realestate.title'),
-    t('services.financial.title')
+    {
+      id: 1,
+      title: t('services.health.title'),
+    },
+    {
+      id: 2,
+      title: t('services.life.title'),
+    },
+    {
+      id: 3,
+      title: t('services.realestate.title'),
+    },
+    {
+      id: 4,
+      title: t('services.financial.title'),
+    }
   ];
 
   const quickLinks = [
-    { name: t('nav.about'), href: '#about' },
-    { name: t('nav.services'), href: '#services' },
-    { name: t('nav.contact'), href: '#contact' }
+    { name: t('nav.about'), href: '/#about' },
+    { name: t('nav.services'), href: '/#services' },
+    { name: t('nav.education'), href: '/educationhub' },
+    { name: t('nav.contact'), href: '/#contact' }
   ];
 
   const socialLinks = [
@@ -24,22 +45,32 @@ export default function Footer() {
     { icon: Instagram, href: 'https://www.instagram.com/ajanthaconsultancyservices/', color: 'hover:text-pink-600' }
   ];
 
-  // Smooth scroll function
-  const handleNavClick = (e, href) => {
-    e.preventDefault();
-    const targetId = href.replace('#', '');
-    const targetElement = document.getElementById(targetId);
+  // Navigation function matching header behavior
+  const handleNavClick = (path) => {
+    if (path.startsWith('/#')) {
+      const hash = path.substring(2);
+      if (location.pathname === '/') {
+        // We're on the home page, scroll to element
+        const element = document.getElementById(hash);
+        if (element) {
+          // Calculate header height for offset
+          const header = document.querySelector('header');
+          const headerHeight = header ? header.offsetHeight + 20 : 100;
+          
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
 
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    } else {
-      if (href === '#' || href === '#home') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+          return;
+        }
       }
+      // Not on home page, navigate with hash (React Router will handle it)
     }
+    // For other paths, scroll to top will be handled by header's useEffect
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -50,11 +81,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              {/* ✅ Logo Image */}
+              {/* Logo Image */}
               <img
-                src="/data/Ajantha logo.png"   // <-- replace with your logo path
+                src="/data/Ajantha logo.png"
                 alt="ACS Logo"
                 className="h-12 w-auto rounded-lg shadow-md"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
               />
               <div className="ml-3">
                 <h3 className="text-lg font-bold">{t('footer.company')}</h3>
@@ -71,6 +105,7 @@ export default function Footer() {
                   target={social.href.startsWith('http') ? '_blank' : '_self'}
                   rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className={`text-gray-400 ${social.color} transition-colors duration-200`}
+                  aria-label={`Visit our ${social.icon.name} page`}
                 >
                   <social.icon className="w-6 h-6" />
                 </a>
@@ -84,13 +119,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href="#services"
-                    onClick={(e) => handleNavClick(e, '#services')}
+                  <Link
+                    to={`/service/${service.id}`}
+                    onClick={() => handleNavClick(`/service/${service.id}`)}
                     className="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
                   >
-                    {service}
-                  </a>
+                    {service.title}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -102,13 +137,13 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => handleNavClick(e, link.href)}
+                  <Link
+                    to={link.href}
+                    onClick={() => handleNavClick(link.href)}
                     className="text-gray-400 hover:text-white transition-colors duration-200 cursor-pointer"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
