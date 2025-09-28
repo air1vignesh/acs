@@ -16,70 +16,70 @@ export default function EducationHub() {
       enTitle: "Introduction",
       teTitle: "పరిచయం",
       enContent: "Buying insurance is hard, reading a policy document is harder. Many terms and conditions are confusing. This guide explains common features, what they mean, and how they affect you.",
-      teContent: "బీమా కొనుగోలు చేయడం కష్టం; పాలసీ డాక్యుమెంటును చదవడం ఇంకా క్లిష్టం. నిబంధనలు చాలా సార్లు గందరగోళంగా ఉంటాయి. ఈ గైడ్ సాధారణ ఫీచర్లు ఏమిటో, వాటి అర్థం ఏమిటో, అవి మీపై ఎలా ప్రభావితం చేస్తాయో వివరిస్తుంది.",
+      teContent: "బీమా కొనగోలు చేయడం కష్టం; పాలసీ డాక్యుమెంటును చదవడం ఇంకా కష్టం. నిబంధనలు చాలా సారు గందరగోళంగా ఉంటాయి. ఈ గైడ్ సాధారణ ఫీచర్లు ఏమిటో, వాటి అర్థం ఏమిటో, అవి మీపై ఎలా ప్రభావితం చేస్తాయో వివరిస్తుంది.",
     },
     {
       id: "co-payment",
       enTitle: "Say no to Co-Payment",
       teTitle: "సహ-చెల్లింపు నుండి తప్పించుకోండి",
       enContent: "A co-payment clause may reduce your premium, but when you make a claim, you might end up paying a large proportion of the cost. Unless mandatory or in case of age / pre-existing condition, avoid co-payment if possible.",
-      teContent: "ప్రీమియాన్ని తగ్గించుకోవడానికి సహ-చెల్లింపు నిబంధన ఉపయోగపడవచ్చు, కానీ క్లెయిమ్ చేసినప్పుడు మీరు ఎక్కువ భాగాన్ని వ్యక్తిగతంగా చెల్లించవలసి ఉండొచ్చు. తప్పనిసరి కాకపోతే లేదా వయసు/pre-existing రోగాల కేసులు ఉన్నప్పుడు మాత్రమే ఉపయోగించండి.",
+      teContent: "ప్రీమియాన్ని తగ్గించుకోవడానికి సహ-చెల్లింపు నిబంధన ఉపయోగపడవచ్చు, కానీ క్లేయిమ్ చేసినప్పుడు మీరు ఎక్కువ భాగాన్ని వ్యక్తిగతంగా చెల్లించవలసి ఉంటుంది. తప్పనిసరి కాకపోతే లేదా వయస్/pre-existing రోగాల కేసుల్లో ఉన్నప్పుడు మాత్రమే ఉపయోగించండి.",
     },
     {
       id: "room-rent",
       enTitle: "Room Rent",
       teTitle: "గది అద్దె",
       enContent: "Many policies have caps or limits on room rent. If the policy says the cap is 1% of sum insured, e.g. ₹5,000 per day on a ₹5 lakh cover, then picking a room that costs more means you'll have to pay the difference.",
-      teContent: "పాలసీలు గది అద్దెపై పరిమితులు లేదా క్యాపులు పెట్టవచ్చు. ఉదాహరణకు, మీరు ₹5 లక్షల పాలసీ తీసుకున్నప్పుడు గది అద్దెకు 1% క్యాపు అంటే రోజుకు ₹5,000 మాత్రమే. కానీ మీరు ఎక్కువ ఖర్చుతో గది ఎంచుకుంటే మిగతా వ్యత్యాసాన్ని మీరు చెల్లించాలి.",
+      teContent: "పాలసీల్లో గది అద్దెపై పరిమితులు లేదా క్యాప్లు పెట్టవచ్చు. ఉదాహరణకు, మీరు ₹5 లక్షల పాలసీ తీసుకున్నప్పుడు గది అద్దెకు 1% క్యాప్ అంటే రోజుకు ₹5,000 మాత్రమే. కానీ మీరు ఎక్కువ ఖర్చుతో గది ఎంచుకుంటే మిగతా వ్యత్యాసాన్ని మీరు చెల్లించాలి.",
     },
     {
       id: "disease-limits",
       enTitle: "Disease Wise Sub-Limits",
       teTitle: "వ్యాధి వారీ ఉప-పరిమితులు",
       enContent: "Some policies set sub-limits per disease — even if the sum insured is high, for certain illnesses they will pay only up to a lower amount. Always check if there are disease-wise caps.",
-      teContent: "కొన్ని పాలసీలు వ్యాధి వారీగా ఉప-పరిమితులు పెట్టతాయి — మొత్తం బీమా పరిమితి పెద్దది అయినా కొన్ని వ్యాధులతో సంబంధం ఉన్నప్పుడు బీమా బాధ్యత తక్కువ మొత్తానికి మాత్రమే ఉంటుంది. వ్యాధి-వారీ క్యాపులు ఉన్నాయా చూడండి.",
+      teContent: "కొన్ని పాలసీలు వ్యాధి వారీగా ఉప-పరిమితులు పెట్టతాయి — మొత్తం బీమా పరిమితి పెద్దదైనా కొన్ని వ్యాధులతో సంబంధం ఉన్నప్పుడు బీమా బాధ్యత తక్కువ మొత్తానికి మాత్రమే ఉంటుంది. వ్యాధి-వారీ క్యాప్లు ఉన్నాయా చూడండి.",
     },
     {
       id: "waiting-periods",
       enTitle: "Waiting Periods",
       teTitle: "వేచి కాలాలు",
-      enContent: "If you have pre-existing conditions, insurers often require you to wait for 2–4 years before those are covered. Also, after policy start, some treatments may not be covered until waiting periods expire. Choose policies with shorter waiting periods where possible.",
-      teContent: "మీకు ముందుగా ఉన్న వ్యాధులున్నట్లయితే, బీమా సంస్థలు అవి కవర్ అయ్యే ముందు 2–4 సంవత్సరాల వేచి ఉండాలి అని కోరుతాయి. పాలసీ ప్రారంభం తర్వాత కూడా కొన్ని చికిత్సలు వేచి కాలం ముగిసేవరకు కవర్ అవ్వవు. వీలైతే చిన్న వేచి కాలాలున్న పాలసీలు ఎంచుకోండి.",
+      enContent: "If you have pre-existing conditions, insurers often require you to wait for 2—4 years before those are covered. Also, after policy start, some treatments may not be covered until waiting periods expire. Choose policies with shorter waiting periods where possible.",
+      teContent: "మీకు ముందుగా ఉన్న వ్యాధులున్నట్లయితే, బీమా సంస్థలు అవి కవర్ అయ్యే ముందు 2—4 సంవత్సరాల వేచి ఉండాలి అని కోరతాయి. పాలసీ ప్రారంభం తర్వాత కూడా కొన్ని చికిత్సలు వేచి కాలం ముగిసేవరకు కవర్ అవ్వవు. వీలైతే చిన్న వేచి కాలాలున్న పాలసీలు ఎంచుకోండి.",
     },
     {
       id: "pre-post-hospitalization",
       enTitle: "Pre & Post Hospitalization",
-      teTitle: "ఆసుపత్రి చేరికకు ముందు & తరువాత",
+      teTitle: "ఆస్పత్రి చేరికకు ముందు & తర్వాత",
       enContent: "Medical tests before admission and follow-ups after discharge can cost a lot. Good policies cover both pre-hospitalization and post-hospitalization expenses (like diagnostics, medicines).",
-      teContent: "ఆసుపత్రిలో చేరే ముందు పరీక్షలు, డిశ్చార్జి తర్వాత చికిత్సలు ఖరీదైనవి. మంచి పాలసీలు రెండు — ఆసుపత్రి చేరికకు ముందు & తరువాత ఖర్చులను కూడా కవర్ చేస్తాయి.",
+      teContent: "ఆస్పత్రిలో చేరే ముందు పరీక్షలు, డిశ్చార్జి తర్వాత చికిత్సలు ఖరీదైనవి. మంచి పాలసీలు రెండు — ఆస్పత్రి చేరికకు ముందు & తర్వాత ఖర్చులను కూడా కవర్ చేస్తాయి.",
     },
     {
       id: "restoration",
       enTitle: "Restoration Benefit",
       teTitle: "పునరుద్ధరణ ప్రయోజనం",
       enContent: "If you make a claim, the sum insured reduces. Restoration benefit restores the full cover (or part thereof) after claim so you're covered again. Important especially in comprehensive or family policies.",
-      teContent: "మీరు క్లెయిమ్ చేసినప్పుడు బీమా పరిమితి తగ్గిపోతుంది. రెస్టొరేషన్ ప్రయోజనంతో క్లెయిమ్ తర్వాత పరిమితి మళ్ళీ రీసెట్ అవుతుంది. కుటుంబ పాలసీలలో ఇది ముఖ్యమైనది.",
+      teContent: "మీరు క్లేయిమ్ చేసినప్పుడు బీమా పరిమితి తగ్గిపోతుంది. రెస్టొరేషన్ ప్రయోజనంతో క్లేయిమ్ తర్వాత పరిమితి మళ్లీ రీసెట్ అవుతుంది. కుటుంబ పాలసీలలో ఇది ముఖ్యమైనది.",
     },
     {
       id: "day-care",
       enTitle: "Day Care Treatments",
       teTitle: "డే కేర్ చికిత్సలు",
       enContent: "Treatments that don't need 24-hour hospitalization (appendicitis, dialysis, etc) often cost a lot but are excluded in some policies. Pick a plan that includes daycare treatments.",
-      teContent: "24 గంటల ఆసుపత్రి చేరిక అవసరం లేని చికిత్సలు (ఉదా: డయాలసిస్) ఖరీదైనవి, కానీ కొన్ని పాలసీలలో ఇవి ఉండకపోవచ్చు. డే-కేర్ చికిత్సలను కవర్ చేసేది ఎంచుకోండి.",
+      teContent: "24 గంటల ఆస్పత్రి చేరిక అవసరం లేని చికిత్సలు (ఉదా: డయాలసిస్) ఖరీదైనవి, కానీ కొన్ని పాలసీలలో ఇవి ఉండకపోవచ్చు. డే-కేర్ చికిత్సలను కవర్ చేసేది ఎంచుకోండి.",
     },
     {
       id: "domiciliary",
       enTitle: "Domiciliary Expense",
       teTitle: "డోమిసిలియరీ ఖర్చులు",
       enContent: "If hospitalization isn't possible (lack of hospital bed, etc), treatment at home may be covered. This helps in emergencies or during crises like pandemics. Not all policies provide it.",
-      teContent: "ఆసుపత్రిలో చేరడం సాధ్యం కాకపోతే, ఇంట్లో చికిత్స నిర్వహించేందుకు ఖర్చులు కవర్ చేయబడవచ్చు. అన్ని పాలసీలు ఇది ఇవ్వవు.",
+      teContent: "ఆస్పత్రిలో చేరడం సాధ్యం కాకపోతే, ఇంట్లో చికిత్స నిర్వహించేందుకు ఖర్చులు కవర్ చేయబడవచ్చు. అన్ని పాలసీలు ఇది ఇవ్వవు.",
     },
     {
       id: "no-claim-bonus",
       enTitle: "No Claim Bonus",
-      teTitle: "నో-క్లెయిమ్ బోనస్",
+      teTitle: "నో-క్లేయిమ్ బోనస్",
       enContent: "If you don't make any claims in a policy year, insurers may increase your sum insured or give bonus benefits. But check how big the bonus is and whether it resets after a claim.",
-      teContent: "పాలసీ సంవత్సరంలో క్లెయిమ్ చేయకపోతే, బీమా పరిమితిని పెంచవచ్చును లేదా బోనస్ ఇవ్వవచ్చు. కానీ బోనస్ ఎంత ఉందో, క్లెయిమ్ తర్వాత అది రీసెట్ అవుతుందా అనేది చూడాలి.",
+      teContent: "పాలసీ సంవత్సరంలో క్లేయిమ్ చేయకపోతే, బీమా పరిమితిని పెంచవచ్చున లేదా బోనస్ ఇవ్వవచ్చు. కానీ బోనస్ ఎంత ఉందో, క్లేయిమ్ తర్వాత అది రీసెట్ అవుతుందా అనేది చూడాలి.",
     },
     {
       id: "checkups",
@@ -117,7 +117,7 @@ export default function EducationHub() {
       enTitle: "Policy Term",
       teTitle: "పాలసీ టర్మ్",
       enContent: "The duration for which the policy provides coverage. Choose a term that covers you until retirement or until your dependents become financially independent, typically 20-40 years.",
-      teContent: "పాలసీ కవరేజీ అందించే కాలపరిమితి. మీ రిటైర్మెంట్ వరకు లేదా మీ ఆధారితులు ఆర్థికంగా స్వతంత్రులు అయ్యే వరకు కవర్ చేసే టర్మ్ ను ఎంచుకోండి, సాధారణంగా 20-40 సంవత్సరాలు.",
+      teContent: "పాలసీ కవరేజీ అందించే కాలపరిమితి. మీ రిటైర్మెంట్ వరకు లేదా మీ ఆధారితులు ఆర్థికంగా స్వతంత్రులు అయ్యే వరకు కవర్ చేసే టర్మ్ న్ని ఎంచుకోండి, సాధారణంగా 20-40 సంవత్సరాలు.",
     },
     {
       id: "premium-options",
@@ -136,23 +136,23 @@ export default function EducationHub() {
     {
       id: "claim-settlement",
       enTitle: "Claim Settlement Ratio",
-      teTitle: "క్లెయిమ్ సెటిల్మెంట్ రేషియో",
+      teTitle: "క్లేయిమ్ సెటిల్మెంట్ రేషియో",
       enContent: "The percentage of claims settled by the insurer. Choose companies with high CSR (above 95%) for reliability. Check IRDAI reports for latest data.",
-      teContent: "ఇన్సూరర్ చేత సెటిల్ చేయబడిన క్లెయిమ్ల శాతం. నమ్మకమైనది కోసం అధిక CSR (95% పైన) ఉన్న కంపెనీలను ఎంచుకోండి. లేటెస్ట్ డేటా కోసం IRDAI రిపోర్ట్లను చెక్ చేయండి.",
+      teContent: "ఇన్సూరర్ చేత సెటిల్ చేయబడిన క్లేయిమ్ల శాతం. నమ్మకమైనది కోసం అధిక CSR (95% పైన) ఉన్న కంపెనీలను ఎంచుకోండి. లేటెస్ట్ డేటా కోసం IRDAI రిపోర్టులను చెక్ చేయండి.",
     },
     {
       id: "tax-benefits",
       enTitle: "Tax Benefits",
       teTitle: "టాక్స్ బెనిఫిట్లు",
       enContent: "Premiums paid are deductible under Section 80C up to ₹1.5 lakh. Death benefit is tax-free under Section 10(10D). This makes term insurance tax-efficient.",
-      teContent: "చెల్లించిన ప్రీమియంలు సెక్షన్ 80C కింద ₹1.5 లక్షల వరకు డిడక్టబుల్. డెత్ బెనిఫిట్ సెక్షన్ 10(10D) కింద టాక్స్-ఫ్రీ. ఇది టర్మ్ ఇన్సూరెన్స్ ను టాక్స్-ఎఫిషియంట్ చేస్తుంది.",
+      teContent: "చెల్లించిన ప్రీమియంలు సెక్షన్ 80C కింద ₹1.5 లక్షల వరకు డిడక్టబుల్. డెత్ బెనిఫిట్ సెక్షన్ 10(10D) కింద టాక్స్-ఫ్రీ. ఇది టర్మ్ ఇన్సూరెన్స్ న్ని టాక్స్-ఎఫిషియంట్ చేస్తుంది.",
     },
     {
       id: "exclusions",
       enTitle: "Exclusions and Waiting Periods",
       teTitle: "ఎక్స్‌క్లూజన్లు మరియు వేటింగ్ పీరియడ్లు",
       enContent: "Common exclusions: suicide within first year, death due to adventure sports, war. Some plans have waiting periods for certain causes. Read the fine print carefully.",
-      teContent: "సాధారణ ఎక్స్‌క్లూజన్లు: మొదటి సంవత్సరంలో ఆత్మహత్య, అడ్వెంచర్ స్పోర్ట్స్ వల్ల మరణం, యుద్ధం. కొన్ని ప్లాన్లు నిర్దిష్ట కారణాలకు వేటింగ్ పీరియడ్లు ఉంటాయి. ఫైన్ ప్రింట్ ను జాగ్రత్తగా చదవండి.",
+      teContent: "సాధారణ ఎక్స్‌క్లూజన్లు: మొదటి సంవత్సరంలో ఆత్మహత్య, అడ్వెంచర్ స్పోర్ట్స్ వల్ల మరణం, యుద్ధం. కొన్ని ప్లాన్లు నిర్దిష్ట కారణాలకు వేటింగ్ పీరియడ్లు ఉంటాయి. ఫైన్ ప్రింట్ న్ని జాగ్రత్తగా చదవండి.",
     },
     {
       id: "types",
@@ -237,34 +237,117 @@ export default function EducationHub() {
         });
 
         return (
-          <div key={sheetName} className="mb-8">
-            <h3 className="text-lg font-bold mb-2">{sheetName}</h3>
-            <div className="overflow-x-auto">
-              <table className="border border-blue-600 w-full">
+          <div key={sheetName} className="mb-12 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="overflow-x-auto hidden md:block">
+              <table className="w-full">
                 <thead>
-                  <tr>
+                  <tr className="bg-gradient-to-r from-gray-50 to-gray-100">
                     {rows[0].map((header, j) => (
-                      <th key={j} className="bg-blue-600 text-white px-4 py-2 border border-blue-600">
+                      <th key={j} className="px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b-2 border-blue-200 whitespace-nowrap">
                         {header?.toString()}
                       </th>
                     ))}
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="divide-y divide-gray-200">
                   {rows.slice(1).map((row, i) => (
-                    <tr key={i}>
-                      {row.map((cell, j) => (
-                        <td
-                          key={j}
-                          className="border border-blue-600 px-4 py-2 text-sm"
-                        >
-                          {cell !== null ? cell.toString() : ''}
-                        </td>
-                      ))}
+                    <tr key={i} className={`hover:bg-blue-50 transition-colors duration-200 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                      {row.map((cell, j) => {
+                        let displayValue: string | number | null = cell;
+                        let cellClass = "px-4 py-3 text-sm text-gray-800 whitespace-nowrap";
+
+                        // Color coding based on column index for health insurance
+                        if (typeof cell === 'number') {
+                          if (j === 1) {
+                            // Market Share - Green
+                            displayValue = cell.toFixed(2) + '%';
+                            cellClass += " font-medium text-green-600";
+                          } else if (j === 2) {
+                            // Claim Settlement Ratio - Blue
+                            displayValue = cell.toFixed(2) + '%';
+                            cellClass += " font-medium text-blue-600";
+                          } else if (j === 3) {
+                            // Network Hospitals - Purple
+                            displayValue = cell.toLocaleString();
+                            cellClass += " font-medium text-purple-600";
+                          } else if (j === 4) {
+                            // Customer Rating - Red
+                            displayValue = cell.toFixed(0);
+                            cellClass += " font-medium text-red-600";
+                          } else if (j === 5) {
+                            // Premium Range - Teal
+                            displayValue = '₹' + cell.toLocaleString();
+                            cellClass += " font-medium text-teal-600";
+                          }
+                        }
+
+                        if (j === 0) {
+                          cellClass += " font-semibold text-gray-900";
+                        }
+
+                        return (
+                          <td key={j} className={cellClass}>
+                            {displayValue !== null ? displayValue.toString() : '-'}
+                          </td>
+                        );
+                      })}
                     </tr>
                   ))}
                 </tbody>
               </table>
+            </div>
+            {/* Mobile-friendly card view for small screens */}
+            <div className="md:hidden divide-y divide-gray-200">
+              {rows.slice(1).map((row, i) => (
+                <div key={i} className="p-4">
+                  <div className="space-y-2">
+                    {row.map((cell, j) => {
+                      let displayValue: string | number | null = cell;
+                      let valueClass = "text-sm text-gray-800 font-medium";
+
+                      // Color coding for mobile view - health insurance
+                      if (typeof cell === 'number') {
+                        if (j === 1) {
+                          // Market Share - Green
+                          displayValue = cell.toFixed(2) + '%';
+                          valueClass = "text-sm font-semibold text-green-600";
+                        } else if (j === 2) {
+                          // Claim Settlement Ratio - Blue
+                          displayValue = cell.toFixed(2) + '%';
+                          valueClass = "text-sm font-semibold text-blue-600";
+                        } else if (j === 3) {
+                          // Network Hospitals - Purple
+                          displayValue = cell.toLocaleString();
+                          valueClass = "text-sm font-semibold text-purple-600";
+                        } else if (j === 4) {
+                          // Customer Rating - Red
+                          displayValue = cell.toFixed(0);
+                          valueClass = "text-sm font-semibold text-red-600";
+                        } else if (j === 5) {
+                          // Premium Range - Teal
+                          displayValue = '₹' + cell.toLocaleString();
+                          valueClass = "text-sm font-semibold text-teal-600";
+                        }
+                      }
+
+                      if (j === 0) {
+                        valueClass = "text-sm font-bold text-gray-900";
+                      }
+
+                      return (
+                        <div key={j} className="flex justify-between items-center">
+                          <span className="text-sm font-medium text-gray-600 flex-shrink-0">
+                            {rows[0][j]?.toString()}:
+                          </span>
+                          <span className={`${valueClass} text-right flex-shrink-0 ml-2`}>
+                            {displayValue !== null ? displayValue.toString() : '-'}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         );
@@ -290,48 +373,101 @@ export default function EducationHub() {
         });
 
         return (
-          <div key={sheetName} className="mb-8">
-            <h3 className="text-lg font-bold mb-2">{sheetName}</h3>
-            <div className="overflow-x-auto">
-              <table className="border border-blue-600 w-full">
+          <div key={sheetName} className="mb-12 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+            <div className="overflow-x-auto hidden md:block">
+              <table className="w-full">
                 <thead>
-                  <tr>
+                  <tr className="bg-gradient-to-r from-gray-50 to-gray-100">
                     {rows[0].map((header, j) => (
-                      <th key={j} className="bg-blue-600 text-white px-4 py-2 border border-blue-600">
+                      <th key={j} className="px-4 py-3 text-left text-sm font-semibold text-gray-700 border-b-2 border-blue-200 whitespace-nowrap">
                         {header?.toString()}
                       </th>
                     ))}
                   </tr>
                 </thead>
-                <tbody>
-                  {rows.slice(1).map((row, i) => (
-                    <tr key={i}>
-                      {row.map((cell, j) => {
-                        let displayValue: string | number | null = cell;
+                <tbody className="divide-y divide-gray-200">
+                  {rows.slice(1).map((row, i) => {
+                    return (
+                      <tr key={i} className={`hover:bg-blue-50 transition-colors duration-200 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
+                        {row.map((cell, j) => {
+                          let displayValue: string | number | null = cell;
+                          let cellClass = "px-4 py-3 text-sm text-gray-800 whitespace-nowrap";
 
-                        if (i > 0 && typeof cell === 'number') {
-                          if (j === 2) {
-                            displayValue = (cell * 100).toFixed(2) + '%';
-                          } else if (j === 3) {
-                            displayValue = cell.toFixed(1) + '%';
-                          } else if (j === 4 || j === 5) {
-                            displayValue = cell.toLocaleString();
+                          if (i >= 0 && typeof cell === 'number') {
+                            if (j === 2) {
+                              displayValue = (cell * 100).toFixed(2) + '%';
+                              cellClass += " font-medium text-green-600";
+                            } else if (j === 3) {
+                              displayValue = cell.toFixed(1) + '%';
+                              cellClass += " font-medium text-blue-600";
+                            } else if (j === 4) {
+                              displayValue = cell.toLocaleString();
+                              cellClass += " font-medium text-orange-600";
+                            } else if (j === 5) {
+                              displayValue = '₹' + cell.toLocaleString();
+                              cellClass += " font-medium text-purple-600";
+                            }
                           }
-                        }
 
-                        return (
-                          <td
-                            key={j}
-                            className="border border-blue-600 px-4 py-2 text-sm"
-                          >
-                            {displayValue !== null ? displayValue.toString() : ''}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  ))}
+                          if (j === 0) {
+                            cellClass += " font-semibold text-gray-900";
+                          }
+
+                          return (
+                            <td key={j} className={cellClass}>
+                              {displayValue !== null ? displayValue.toString() : '-'}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
+            </div>
+            {/* Mobile-friendly card view for small screens */}
+            <div className="md:hidden divide-y divide-gray-200">
+              {rows.slice(1).map((row, i) => (
+                <div key={i} className="p-4">
+                  <div className="space-y-2">
+                    {row.map((cell, j) => {
+                      let displayValue: string | number | null = cell;
+                      let valueClass = "text-sm text-gray-800 font-medium";
+
+                      if (typeof cell === 'number') {
+                        if (j === 2) {
+                          displayValue = (cell * 100).toFixed(2) + '%';
+                          valueClass = "text-sm font-semibold text-green-600";
+                        } else if (j === 3) {
+                          displayValue = cell.toFixed(1) + '%';
+                          valueClass = "text-sm font-semibold text-blue-600";
+                        } else if (j === 4) {
+                          displayValue = cell.toLocaleString();
+                          valueClass = "text-sm font-semibold text-orange-600";
+                        } else if (j === 5) {
+                          displayValue = '₹' + cell.toLocaleString();
+                          valueClass = "text-sm font-semibold text-purple-600";
+                        }
+                      }
+
+                      if (j === 0) {
+                        valueClass = "text-sm font-bold text-gray-900";
+                      }
+
+                      return (
+                        <div key={j} className="flex justify-between items-center">
+                          <span className="text-sm font-medium text-gray-600 flex-shrink-0">
+                            {rows[0][j]?.toString()}:
+                          </span>
+                          <span className={`${valueClass} text-right flex-shrink-0 ml-2`}>
+                            {displayValue !== null ? displayValue.toString() : '-'}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         );
@@ -425,19 +561,43 @@ export default function EducationHub() {
 
         {/* Tables Section */}
         {selectedGuide === 'health' && (
-          <div className="mb-12 px-4 md:px-0">
-            <h3 className="text-xl font-semibold mb-4 text-center">
-              {isEnglish ? "Top 10 Health Insurance Companies (2025)" : "టాప్ 10 హెల్త్ ఇన్సూరెన్స్ కంపెనీలు (2025)"}
-            </h3>
-            {healthTables.length > 0 ? healthTables : <p>{isEnglish ? "Loading..." : "లోడింగ్..."}</p>}
+          <div className="mb-12 px-4 md:px-8 lg:px-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                {isEnglish ? "Top 10 Health Insurance Companies (2025)" : "టాప్ 10 హెల్త్ ఇన్సూరెన్స్ కంపెనీల (2025)"}
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base">
+                {isEnglish ? "Compare the leading health insurance providers in India" : "భారతదేశంలోని ప్రముఖ ఆరోగ్య బీమా ప్రదాతలను పోల్చండి"}
+              </p>
+            </div>
+            <div className="max-w-7xl mx-auto">
+              {healthTables.length > 0 ? healthTables : (
+                <div className="flex justify-center items-center py-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+                  <span className="ml-3 text-gray-600">{isEnglish ? "Loading data..." : "డేటా లోడ్ అవుతోంది..."}</span>
+                </div>
+              )}
+            </div>
           </div>
         )}
         {selectedGuide === 'term' && (
-          <div className="mb-12 px-4 md:px-0">
-            <h3 className="text-xl font-semibold mb-4 text-center">
-              {isEnglish ? "Top 10 Life Insurance Companies (2025)" : "టాప్ 10 లైఫ్ ఇన్సూరెన్స్ కంపెనీలు (2025)"}
-            </h3>
-            {lifeTables.length > 0 ? lifeTables : <p>{isEnglish ? "Loading..." : "లోడింగ్..."}</p>}
+          <div className="mb-12 px-4 md:px-8 lg:px-16">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+                {isEnglish ? "Top 10 Life Insurance Companies (2025)" : "టాప్ 10 లైఫ్ ఇన్సూరెన్స్ కంపెనీల (2025)"}
+              </h3>
+              <p className="text-gray-600 text-sm md:text-base">
+                {isEnglish ? "Compare the leading life insurance providers in India" : "భారతదేశంలోని ప్రముఖ జీవిత బీమా ప్రదాతలను పోల్చండి"}
+              </p>
+            </div>
+            <div className="max-w-7xl mx-auto">
+              {lifeTables.length > 0 ? lifeTables : (
+                <div className="flex justify-center items-center py-12">
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+                  <span className="ml-3 text-gray-600">{isEnglish ? "Loading data..." : "డేటా లోడ్ అవుతోంది..."}</span>
+                </div>
+              )}
+            </div>
           </div>
         )}
 
@@ -525,7 +685,7 @@ export default function EducationHub() {
           </main>
         </div>
 
-        {/* Mobile Bottom Navigation (Optional - Alternative approach) */}
+        {/* Mobile Bottom Navigation */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-30">
           <div className="flex justify-between items-center">
             <button
