@@ -453,7 +453,7 @@ export default function ServiceDetailPage() {
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
       {/* WhatsApp Button */}
       <a 
-        href={`https://wa.me/90308?text=${encodeURIComponent(
+        href={`https://wa.me/9030862622?text=${encodeURIComponent(
           language === 'te' 
             ? `హలో, నేను ${service.teTitle} గురించి మరింత తెలుసుకోవాలనుకుంటున్నాను.` 
             : `Hello, I would like to know more about ${service.title}.`

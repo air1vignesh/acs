@@ -6,7 +6,6 @@ import { Menu, X, Globe, Facebook, Twitter, Instagram } from 'lucide-react';
 const Header: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLogoModalOpen, setIsLogoModalOpen] = useState(false);
   const location = useLocation();
 
   const toggleLanguage = () => {
@@ -50,17 +49,7 @@ const Header: React.FC = () => {
         }
       }
     }
-    // Scroll to top for all navigations
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const openLogoModal = (e: React.MouseEvent) => {
-    e.preventDefault(); 
-    setIsLogoModalOpen(true);
-  };
-
-  const closeLogoModal = () => {
-    setIsLogoModalOpen(false);
   };
 
   return (
@@ -69,9 +58,11 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <a href="#" onClick={openLogoModal} className="flex items-center">
-              <img src="/data/1758011042953.png" alt="Ajantha Consultancy Services Logo" className="w-12 h-12 cursor-pointer" />
-            </a>
+            <img
+              src="/data/1758011042953.png"
+              alt="Ajantha Consultancy Services Logo"
+              className="w-12 h-12"
+            />
             <span className="text-xl font-bold text-gray-900">
               {language === 'te'
                 ? 'అజంతా కన్సల్టెన్సీ సర్వీసెస్'
@@ -132,7 +123,7 @@ const Header: React.FC = () => {
               <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://x.com/AjanthaConsulta" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-600 transition-colors">
+              <a href="https://x.com/AjanthaConsulta?t=CVX-Adl3jnmHuiOf2VeCgQ&s=09" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-600 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
               <a href="https://www.instagram.com/ajanthaconsultancyservices/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-400 hover:text-blue-600 transition-colors">
@@ -203,22 +194,6 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
-
-      {/* Logo Pop-up Modal */}
-      {isLogoModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-[999]" onClick={closeLogoModal}>
-          <div className="relative max-w-full max-h-full bg-white p-4 rounded-lg shadow-xl" onClick={(e) => e.stopPropagation()}> 
-            <button 
-              onClick={closeLogoModal}
-              className="absolute -top-3 -right-3 text-gray-700 bg-white rounded-full p-1 shadow-md hover:bg-gray-100 transition-colors"
-              aria-label="Close"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <img src="/public/data/1758011042953.png" alt="Ajantha Consultancy Services Logo" className="max-w-full max-h-[90vh] object-contain" />
-          </div>
-        </div>
-      )}
     </header>
   );
 };
