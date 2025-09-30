@@ -439,35 +439,47 @@ export default function ServiceDetailPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-700 to-green-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            {language === 'te' ? 'ప్రారంభించడానికి సిద్ధంగా ఉన్నారా?' : 'Ready to Get Started?'}
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            {language === 'te' 
-              ? `మీ ${service.teTitle} అవసరాలను చర్చించడానికి మా నిపుణులతో ఉచిత సంప్రదింపును షెడ్యూల్ చేయండి.`
-              : `Schedule a free consultation with our experts to discuss your ${service.title.toLowerCase()} needs.`
-            }
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              to="/#contact" 
-              className="bg-white text-blue-700 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-flex items-center justify-center"
-            >
-              {language === 'te' ? 'ఉచిత సంప్రదింపు పొందండి' : 'Get Free Consultation'}
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
-            <a 
-              href="tel:+919876543210"
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors duration-200 inline-flex items-center justify-center"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              {language === 'te' ? 'కాల్ చేయండి' : 'Call Now'}
-            </a>
-          </div>
-        </div>
-      </section>
+<section className="py-20 bg-gradient-to-r from-blue-700 to-green-600">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 className="text-3xl font-bold text-white mb-6">
+      {language === 'te' ? 'ప్రారంభించడానికి సిద్ధంగా ఉన్నారా?' : 'Ready to Get Started?'}
+    </h2>
+    <p className="text-xl text-blue-100 mb-8">
+      {language === 'te' 
+        ? `మీ ${service.teTitle} అవసరాలను చర్చించడానికి మా నిపుణులను  సంప్రదించండి.`
+        : `Contact our experts to discuss your ${service.title.toLowerCase()} needs.`
+      }
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* WhatsApp Button */}
+      <a 
+        href={`https://wa.me/90308?text=${encodeURIComponent(
+          language === 'te' 
+            ? `హలో, నేను ${service.teTitle} గురించి మరింత తెలుసుకోవాలనుకుంటున్నాను.` 
+            : `Hello, I would like to know more about ${service.title}.`
+        )}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold hover:bg-black-50 transition-colors duration-200 inline-flex items-center justify-center"
+      >
+        <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.52 3.48A11.77 11.77 0 0 0 12 0a11.77 11.77 0 0 0-8.52 3.48C1.68 5.28.96 7.6.96 10c0 2.08.6 4.12 1.76 5.84L0 24l8.4-2.72A11.94 11.94 0 0 0 12 22c2.4 0 4.72-.72 6.52-2.48A11.77 11.77 0 0 0 24 12c0-2.4-.72-4.72-2.48-6.52zM12 21.04c-1.92 0-3.84-.56-5.44-1.68l-.4-.24-5 1.6 1.6-5-.24-.4C1.92 13.84 1.36 11.92 1.36 10c0-5.84 4.8-10.64 10.64-10.64 2.8 0 5.44 1.12 7.36 3.12s3.12 4.56 3.12 7.36c0 5.84-4.8 10.64-10.64 10.64zm5.28-7.36c-.32-.16-1.92-.96-2.24-1.04-.32-.08-.56-.16-.8.16s-.88 1.04-1.12 1.28-.4.24-.72.08c-.32-.16-1.36-.48-2.64-1.6a9.29 9.29 0 0 1-1.68-2.08c-.16-.32 0-.48.16-.64.16-.16.32-.4.48-.64.16-.16.24-.32.32-.56.08-.16 0-.4-.08-.56-.08-.16-.8-1.92-1.12-2.64-.32-.64-.64-.56-.8-.56h-.64c-.16 0-.56.08-.88.4-.32.32-1.2 1.12-1.2 2.72s1.2 3.12 1.36 3.36c.16.24 2.4 3.76 5.92 5.28.8.32 1.44.56 1.92.72.8.24 1.52.2 2.08.12.64-.08 1.92-.8 2.16-1.6.24-.8.24-1.44.16-1.6-.08-.16-.28-.24-.6-.4z"/>
+        </svg>
+        {language === 'te' ? 'WhatsApp లో చాట్ చేయండి' : 'Chat on WhatsApp'}
+      </a>
+
+      {/* Call Now Button */}
+      <a 
+        href="tel:9030862622"
+        className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors duration-200 inline-flex items-center justify-center"
+      >
+        <Phone className="w-5 h-5 mr-2" />
+        {language === 'te' ? 'కాల్ చేయండి' : 'Call Now'}
+      </a>
+    </div>
+  </div>
+</section>
+
 
       <Footer />
     </div>
