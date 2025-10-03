@@ -23,13 +23,13 @@ export default function HealthInsuranceCalculatorPage() {
     {name: "Coronary Artery Bypass Grafting (CABG)", cost: 450000},
     {name: "Angioplasty (single stent)", cost: 350000},
     {name: "Heart Valve Replacement", cost: 570000},
-    {name: "Heart Transplant", cost: 3400000},
-    {name: "TAVI/TAVR Procedure", cost: 2800000},
-    {name: "Pacemaker Implantation", cost: 450000},
-    {name: "Coronary Angiogram", cost: 60000},
+    {name: "Hernia Repair", cost: 200000},
+    {name: "Kidney Stone Removal (Lithotripsy)", cost: 200000},
+    {name: "Gallbladder Surgery", cost: 150000},
+    {name: "Brain Tumor Surgery", cost: 850000},
     {name: "Knee Replacement Surgery", cost: 500000},
     {name: "Hip Replacement Surgery", cost: 400000},
-    {name: "Spinal Fusion Surgery", cost: 820000}
+    {name: "Cataract Surgery", cost: 120000}
   ];
 
   const formatCurrency = (value) => {

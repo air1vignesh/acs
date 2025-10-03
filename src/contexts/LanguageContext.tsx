@@ -129,7 +129,7 @@ const translations = {
     'calculators.sip.title': 'SIP కాలిక్యులేటర్',
     'calculators.sip.subtitle': 'మీ క్రమబద్ధమైన పెట్టుబడిని ప్లాన్ చేయండి మరియు రిటర్న్‌లను లెక్కించండి',
     'calculators.life.title': 'జీవిత బీమా కాలిక్యులేటర్',
-    'calculators.life.subtitle': 'AI-శక్తితో కూడిన విశ్లేషణతో సరైన జీవిత బీమా కవరేజీని లెక్కించండి',
+    'calculators.life.subtitle': 'ఉత్తమ జీవిత బీమా కవరేజీని ఎంచుకోండి',
     
     // Service Details
     'service.benefits': 'ముఖ్యాంశాలు',
@@ -282,7 +282,7 @@ const translations = {
     'calculators.sip.title': 'SIP Calculator',
     'calculators.sip.subtitle': 'Plan your systematic investment and calculate returns',
     'calculators.life.title': 'Life Insurance Calculator',
-    'calculators.life.subtitle': 'Calculate optimal life insurance coverage with AI-powered analysis',
+    'calculators.life.subtitle': 'Choose optimal life insurance coverage',
     
     // Service Details
     'service.benefits': 'Key Benefits',

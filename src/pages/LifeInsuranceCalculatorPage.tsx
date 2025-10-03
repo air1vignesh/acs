@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom"; 
 import { 
   Lightbulb, 
   Info, 
-  CheckCircle, 
+  ArrowLeft, 
   AlertTriangle, 
   Calculator,
   TrendingUp,
@@ -17,6 +18,7 @@ import {
   Clock,
   Award
 } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 import Header from "../components/Header"; // Replace with your actual Header component import path
 import Footer from "../components/Footer"; // Replace with your actual Footer component import path
 
@@ -24,6 +26,8 @@ export default function EnhancedLifeInsuranceCalculator() {
   const [step, setStep] = useState(1);
   const [validationErrors, setValidationErrors] = useState({});
   const contentRef = useRef(null); // Reference to the content container
+  const { t } = useLanguage();
+
 
   // Basic Information
   const [age, setAge] = useState(32);
@@ -190,15 +194,15 @@ export default function EnhancedLifeInsuranceCalculator() {
     
     childrenAges.forEach(childAge => {
       // Education costs
-      const yearsToGraduation = Math.max(0, 22 - childAge);
-      const currentEducationCost = 2500000; // Higher education cost
+      const yearsToGraduation = Math.max(0, 24 - childAge);
+      const currentEducationCost = 3000000; // Higher education cost
       const futureEducationCost = currentEducationCost * Math.pow(1 + inflation, yearsToGraduation);
       
       // Marriage costs (if goal is selected)
       let marriageCost = 0;
       if (childMarriageGoal && childAge < 25) {
         const yearsToMarriage = Math.max(0, 25 - childAge);
-        marriageCost = 1500000 * Math.pow(1 + inflation, yearsToMarriage);
+        marriageCost = 2000000 * Math.pow(1 + inflation, yearsToMarriage);
       }
       
       childrenFutureCost += futureEducationCost + marriageCost;
@@ -227,8 +231,8 @@ export default function EnhancedLifeInsuranceCalculator() {
 
     // Goal-based additions
     let goalBasedNeeds = 0;
-    if (dreamHomeGoal) goalBasedNeeds += 2000000;
-    if (businessGoal) goalBasedNeeds += 1000000;
+    if (dreamHomeGoal) goalBasedNeeds += 3000000;
+    if (businessGoal) goalBasedNeeds += 2000000;
     if (travelGoal) goalBasedNeeds += 500000;
 
     // Comprehensive assets calculation
@@ -324,17 +328,17 @@ export default function EnhancedLifeInsuranceCalculator() {
       recommendations.push({
         type: 'planning',
         icon: Users,
-        text: `Secure ₹${(result.childrenFutureCost / 100000).toFixed(1)}L for children's education and marriage through dedicated child plans.`,
+        text: `Secure ₹${(result.childrenFutureCost / 100000).toFixed(1)}Lakhs for children's education and marriage through dedicated child plans.`,
         priority: 3
       });
     }
 
     // Priority 4: Health insurance adequacy
-    if (parseNumber(currentHealthInsurance) < 1000000) {
+    if (parseNumber(currentHealthInsurance) < 2000000) {
       recommendations.push({
         type: 'health',
         icon: Heart,
-        text: "Consider increasing health insurance to ₹10L+ to protect against medical inflation.",
+        text: "Consider increasing health insurance to ₹20 Lakhs to protect against medical inflation.",
         priority: 4
       });
     }
@@ -386,6 +390,29 @@ export default function EnhancedLifeInsuranceCalculator() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
       {/* Use Project's Existing Header */}
       <Header />
+             
+                    {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-50 to-green-50 pt-20 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <Link 
+              to="/calculators" 
+              className="inline-flex items-center text-gray-600 hover:text-blue-700 transition-colors duration-200"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              {t('nav.back')}
+            </Link>
+          </div>
+          <div className="text-center">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              {t('calculators.life.title')}
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              {t('calculators.life.subtitle')}
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Enhanced Step Indicators */}
       <div className="bg-white shadow-sm border-b">
@@ -1084,7 +1111,7 @@ export default function EnhancedLifeInsuranceCalculator() {
                           onChange={(e) => setDreamHomeGoal(e.target.checked)}
                           className="w-4 h-4 text-teal-600"
                         />
-                        <label className="text-sm font-medium">Dream Home Purchase (₹20L buffer)</label>
+                        <label className="text-sm font-medium">Dream Home Purchase (₹30L buffer)</label>
                       </div>
                       <div className="flex items-center gap-3">
                         <input
@@ -1093,7 +1120,7 @@ export default function EnhancedLifeInsuranceCalculator() {
                           onChange={(e) => setBusinessGoal(e.target.checked)}
                           className="w-4 h-4 text-teal-600"
                         />
-                        <label className="text-sm font-medium">Start Business (₹10L capital)</label>
+                        <label className="text-sm font-medium">Start Business (₹20L capital)</label>
                       </div>
                     </div>
                     <div className="space-y-4">
