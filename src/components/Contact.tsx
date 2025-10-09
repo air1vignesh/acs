@@ -17,8 +17,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'ajanthaconsultancyservices@gmail.com',
-      action: 'mailto:ajanthaconsultancyservices@gmail.com',
+      value: 'ajanthaconsultancy@gmail.com',
+      action: 'mailto:ajanthaconsultancy@gmail.com',
       bg: 'bg-pink-100',
       color: 'text-pink-700'
     },
