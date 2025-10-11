@@ -1,0 +1,21 @@
+{
+  "name": "Ajantha Consultancy Services",
+  "short_name": "Ajantha",
+  "description": "Ajantha Consultancy Services provides trusted guidance in health insurance, life insurance, real estate, and financial planning.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "/data/1758011042953.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/data/1758011042953.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
