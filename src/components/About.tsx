@@ -9,22 +9,34 @@ export default function About() {
     {
       icon: Heart,
       title: t('about.values.clientCentric.title'),
-      description: t('about.values.clientCentric.description')
+      description: t('about.values.clientCentric.description'),
+      bg: 'bg-[#FFE5E5]', // light pink/red
+      iconBg: 'bg-[#FFD4D4]', // slightly darker pink
+      iconColor: 'text-[#D32F2F]' // red
     },
     {
       icon: Award,
       title: t('about.values.expertise.title'),
-      description: t('about.values.expertise.description')
+      description: t('about.values.expertise.description'),
+      bg: 'bg-[#E3F2FD]', // light blue
+      iconBg: 'bg-[#BBDEFB]', // slightly darker blue
+      iconColor: 'text-[#1976D2]' // blue
     },
     {
       icon: Target,
       title: t('about.values.experience.title'),
-      description: t('about.values.experience.description')
+      description: t('about.values.experience.description'),
+      bg: 'bg-[#E8F5E9]', // light green
+      iconBg: 'bg-[#C8E6C9]', // slightly darker green
+      iconColor: 'text-[#388E3C]' // green
     },
     {
       icon: Users,
       title: t('about.values.education.title'),
-      description: t('about.values.education.description')
+      description: t('about.values.education.description'),
+      bg: 'bg-[#FFF9E6]', // light yellow/cream
+      iconBg: 'bg-[#FFF3CD]', // slightly darker yellow
+      iconColor: 'text-[#F57C00]' // orange
     }
   ];
 
@@ -40,23 +52,15 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <div className="mb-6">
-            <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-4">
-              IRDAI Certified • Personal Experience • Trusted Guidance
-            </span>
-          </div>
-          
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
             {t('about.title')}
           </h1>
-          
           <h2 className="text-2xl md:text-3xl text-blue-700 mb-6 font-semibold">
             {t('about.subtitle')}
           </h2>
-          
           <div className="max-w-5xl mx-auto">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               {t('about.companyDescription')}
@@ -85,10 +89,10 @@ export default function About() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+                className={`${value.bg} rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group`}
               >
-                <div className="bg-gradient-to-br from-blue-100 to-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <value.icon className="w-8 h-8 text-blue-700" />
+                <div className={`${value.iconBg} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <value.icon className={`w-8 h-8 ${value.iconColor}`} />
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 mb-3">
                   {value.title}
@@ -112,7 +116,6 @@ export default function About() {
                 key={index}
                 className="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row items-center p-6 gap-6 transition-transform duration-500 hover:scale-105 hover:shadow-3xl"
               >
-                {/* Image */}
                 <div className="w-full md:w-1/2 flex justify-center">
                   <div className="w-72 h-72 rounded-full overflow-hidden shadow-lg transform transition-all duration-500">
                     <img
@@ -123,7 +126,6 @@ export default function About() {
                   </div>
                 </div>
                 
-                {/* Text Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
                   <h4 className="text-2xl font-bold text-gray-900 mb-2">
                     {member.name}
@@ -137,8 +139,6 @@ export default function About() {
                   <p className="text-gray-600 leading-relaxed mb-3">
                     {member.experience}
                   </p>
-
-                  {/* Founder Note */}
                   <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-xl border-l-4 border-blue-500 shadow-md hover:shadow-lg transition-all duration-300">
                     <div className="flex items-start gap-3">
                       <Quote className="w-8 h-8 text-blue-600 flex-shrink-0" />
@@ -152,6 +152,7 @@ export default function About() {
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );
