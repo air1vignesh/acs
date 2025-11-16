@@ -453,7 +453,7 @@ export default function ServiceDetailPage() {
     <div className="flex flex-col sm:flex-row gap-4 justify-center">
       {/* WhatsApp Button */}
       <a 
-        href={`https://wa.me/9030862622?text=${encodeURIComponent(
+        href={`https://wa.me/9603189145?text=${encodeURIComponent(
           language === 'te' 
             ? `హలో, నేను ${service.teTitle} గురించి మరింత తెలుసుకోవాలనుకుంటున్నాను.` 
             : `Hello, I would like to know more about ${service.title}.`
@@ -470,7 +470,7 @@ export default function ServiceDetailPage() {
 
       {/* Call Now Button */}
       <a 
-        href="tel:9030862622"
+        href="tel:9603189145"
         className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-700 transition-colors duration-200 inline-flex items-center justify-center"
       >
         <Phone className="w-5 h-5 mr-2" />

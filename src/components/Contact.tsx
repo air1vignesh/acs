@@ -9,8 +9,8 @@ export default function Contact() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 9030862622',
-      action: 'tel:+919030862622',
+      value: '+91 9603189145',
+      action: 'tel:+919603189145',
       bg: 'bg-blue-100',
       color: 'text-blue-700'
     },
@@ -42,7 +42,7 @@ export default function Contact() {
 
   // ✅ Pre-filled WhatsApp message
   const whatsappLink =
-    'https://wa.me/919030862622?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.';
+    'https://wa.me/919603189145?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.';
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">

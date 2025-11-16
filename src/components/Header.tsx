@@ -98,7 +98,7 @@ const Header: React.FC = () => {
               onClick={() => handleNavClick('/educationhub')}
               className={`font-medium transition-colors ${isActive('/educationhub') ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
             >
-              {language === 'te' ? 'విద్య' : 'Education'}
+              {language === 'te' ? 'బీమా గైడ్' : 'Insurance Guide'}
             </Link>
             <Link
               to="/calculators"
@@ -180,7 +180,7 @@ const Header: React.FC = () => {
               </Link>
               {/* Social Media Links for Mobile */}
               <div className="flex items-center space-x-4 mt-4 justify-center border-t border-gray-200 pt-4">
-                <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600 transition-colors">
+                <a href="https://www.facebook.com/profile.php?id=61583964147111" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-blue-600 transition-colors">
                   <Facebook className="w-6 h-6" />
                 </a>
                 <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-blue-600 transition-colors">

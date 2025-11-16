@@ -40,7 +40,7 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', color: 'hover:text-blue-600' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61583964147111', color: 'hover:text-blue-600' },
     { icon: Twitter, href: 'https://x.com/AjanthaConsulta?t=CVX-Adl3jnmHuiOf2VeCgQ&s=09', color: 'hover:text-blue-400' },
     { icon: Instagram, href: 'https://www.instagram.com/ajanthaconsultancyservices/', color: 'hover:text-pink-600' }
   ];
